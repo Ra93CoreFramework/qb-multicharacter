@@ -279,7 +279,7 @@
                         const result = data.data;
 
                         const selectDrop = document.getElementById('nationality');
-
+                        
                         result.forEach(obj => {
                             viewmodel.nationalities.push(obj.country);
                         });
@@ -332,8 +332,8 @@
                         else {
                             this.registerData.firstname = undefined
                             this.registerData.lastname = undefined
-                            this.registerData.nationality = "Italy"
-                            this.registerData.gender = "Male"
+                            this.registerData.nationality = undefined
+                            this.registerData.gender = undefined
                             this.registerData.date = (new Date(Date.now() - (new Date()).getTimezoneOffset() * 60000)).toISOString().substr(0, 10)
 
                             this.show.characters = false
@@ -451,7 +451,7 @@
                     }
                 });
             }
-
+            
         });
     </script>
 </html>
